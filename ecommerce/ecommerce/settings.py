@@ -31,14 +31,14 @@ AUTH_USER_MODEL = 'auth.User'
 
 
 INSTALLED_APPS = [
-    'products.apps.ProductsConfig',
+    'product.apps.ProductConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms'
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -121,6 +121,7 @@ USE_TZ = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 STATIC_URL = '/static/'
+STATICFILES_DIRS = {os.path.join(BASE_DIR, 'static_myproj'), }
 
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
