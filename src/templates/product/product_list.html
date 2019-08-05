@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block heading %}
+<h1>Product List</h1>
+{% endblock %}
+
+
+{% block content %}
+
+    {% for product in product_list %}
+    <p>{{product.title}}<br>
+        {{product.price}}<br>
+        {{product.description}}
+        </p>
+    {% endfor %}
+
+{% endblock %}
+
+
+
+<!--{-->
+<!--'paginator':        None, -->
+<!--'page_obj':         None, -->
+<!--'is_paginated':     False, -->
+<!--'object_list': -->
+<!--                    <QuerySet [<Product: Computer>, <Product: Hat>]>, -->
+<!--'product_list':     <QuerySet [<Product: Computer>, <Product: Hat>]>, -->
+<!--'view': <product.views.ProductListView object at 0x0423A8F0>-->
+<!--            }-->

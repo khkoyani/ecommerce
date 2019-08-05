@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from django.urls import path
+from django.urls import path, include
 from . import views as base_views
 from product import views as product_views
 
@@ -28,11 +28,12 @@ from product import views as product_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', product_views.home, name='home'),
+    path('', product_views.ProductListView.as_view(), name='home'),
     path('about/', base_views.about, name='about'),
     path('contact/', base_views.contact, name='contact'),
     path('login/', base_views.UserLogIn.as_view(), name='login'),
     path('logout/', base_views.UserLogOut.as_view(), name='logout'),
+    path('product/', include('product.urls')),
 ]
 
 if settings.DEBUG:
