@@ -1,15 +1,10 @@
 import random
 import string
+import os
 from django.utils.text import slugify
 
 def random_string_generator(size=10, chars=string.ascii_lowercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
-
-
-print(random_string_generator())
-
-print(random_string_generator(size=50))
-
 
 
 def unique_slug_generator(instance, new_slug=None):
@@ -27,3 +22,15 @@ def unique_slug_generator(instance, new_slug=None):
                 )
         return unique_slug_generator(instance, new_slug=new_slug)
     return slug
+
+
+def file_ext(filepath):
+    base_name = os.path.basename(filepath)
+    name, ext = os.path.splitext(base_name)
+    return name, ext
+
+def upload_image_path(instance, filename):
+    new_filename = random.randint(0, 132465126)
+    name, ext = file_ext(filename)
+    final_filename = f'{new_filename}{ext}'
+    return f'products/{new_filename}-{final_filename}'
