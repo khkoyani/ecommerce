@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Product
+from django.http import Http404
 
 
 
@@ -18,6 +19,11 @@ class ProductListView(ListView):
 
 class ProductDetailView(DetailView):
     model = Product
+
+    def get_object(self, *args, **kwargs):
+        slug = self.kwargs.get('slug')
+        instance = Product.objects.get_single_object_by_slug(slug)
+        return instance
 
 class ProductCreateView(CreateView):
     pass
