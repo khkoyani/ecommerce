@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import ContactForm
+from django.contrib.auth.views import LoginView, LogoutView
+from django.conf import settings
 
 def about(request):
     context = {'title': 'about', 'body':'About us'}
@@ -6,7 +9,17 @@ def about(request):
 
 
 def contact(request):
-    context = {'title': 'contact us', 'body':'FormControl'}
+    form = ContactForm(request.POST or None)
+    if form.is_valid():
+        print(form.cleaned_data)
+    context = {'title': 'contact us', 'form': form}
     return render(request, 'contact/contact.html', context)
 
+class UserLogIn(LoginView):
+    template_name = 'auth/login.html'
+    success_url = ''
+    redirect_field_name = settings.REDIRECT_FIELD_NAME
 
+class UserLogOut(LogoutView):
+    template_name = 'auth/logout.html'
+    url = 'login'

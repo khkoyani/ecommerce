@@ -8,24 +8,53 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
-
-    <title>
-      {% if title %}
-      {{title}}
-      {% else %}
-      eCommerce
-      {% endif %}
-    </title>
+    
+    <title>eCommerce</title>
+    <title>- {{title}}</title>
 
   </head>
   <body>
-  <div class="container">
+  <div class="container navigation">
+    <div class="sect-title">
 
-    <h1>Site under construction</h1>
-    {% block content %}{% endblock %}
-
-    <img src="{% static 'img/beach.jpg' %}" alt="" class="img-fluid">
+    </div>
   </div>
+  <div class="container page-heading">
+    <div class="row">
+      <div class="col">
+        <div>{% block heading %}{% endblock %}</div>
+      </div>
+    </div>
+  </div>
+
+  {% if form %}
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div>{% block form %}{% endblock %}</div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+<!--block content-->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div>{% block content %}{% endblock %}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer">
+    <div class="row">
+      <div class="col">
+        <div>Site under construction</div>
+      </div>
+    </div>
+  </div>
+
+
+
     <!-- Optional JavaScript -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

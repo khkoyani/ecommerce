@@ -129,3 +129,5 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn', 'media_root')
 
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
+
+REDIRECT_FIELD_NAME = 'home'

@@ -1,0 +1,526 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gridte",
+				"grid-template-columns"
+			],
+			[
+				"grid-",
+				"grid-gap"
+			],
+			[
+				"blue",
+				"blue"
+			],
+			[
+				"EMAIL_H",
+				"EMAIL_HOST_USER"
+			],
+			[
+				"EMAIL",
+				"EMAIL_PORT"
+			],
+			[
+				"EM",
+				"EMAIL_HOST"
+			],
+			[
+				"passw",
+				"password2"
+			],
+			[
+				"pa",
+				"PasswordChangeForm\tclass"
+			],
+			[
+				"Chan",
+				"PasswordChangeForm\tclass"
+			],
+			[
+				"au",
+				"post_author"
+			],
+			[
+				"clea",
+				"cleaned_data\tstatement"
+			],
+			[
+				"g",
+				"get_object\tfunction"
+			],
+			[
+				"ord",
+				"ordering\tstatement"
+			],
+			[
+				"context",
+				"context_object_name\tstatement"
+			],
+			[
+				"stat",
+				"staticfiles_urlpatterns\tfunction"
+			],
+			[
+				"sta",
+				"staticfiles\tmodule"
+			],
+			[
+				"is",
+				"__init_subclass__\tfunction"
+			],
+			[
+				"p",
+				"p_uform\tstatement"
+			],
+			[
+				"Pro",
+				"ProfileUpdateForm\tclass"
+			],
+			[
+				"po",
+				"post_save\tstatement"
+			],
+			[
+				"de",
+				"DEBUG"
+			],
+			[
+				"MEDIA",
+				"MEDIA_URL"
+			],
+			[
+				"ema",
+				"Email"
+			],
+			[
+				"Model",
+				"ModelForm\tclass"
+			],
+			[
+				"User",
+				"UserCreationForm\tclass"
+			],
+			[
+				"con",
+				"contrib\tmodule"
+			],
+			[
+				"cl",
+				"cleaned_data\tstatement"
+			],
+			[
+				"user",
+				"user_views\tmodule"
+			],
+			[
+				"input",
+				"input_email"
+			],
+			[
+				"ips",
+				"Ipsum\tfunction"
+			],
+			[
+				"c",
+				"contrib\tmodule"
+			],
+			[
+				"n",
+				"now\tfunction"
+			],
+			[
+				"auto",
+				"auto_now_add"
+			],
+			[
+				"tzin",
+				"timezone\tmodule"
+			],
+			[
+				"Da",
+				"DateField\tclass"
+			],
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"lorem",
+				"Lorem"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"vi",
+				"views\tmodule"
+			],
+			[
+				"HTT",
+				"HttpResponse\tclass"
+			],
+			[
+				"t",
+				"type\tAttr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Karan/django_projects/ecommerce/src/static_myproj/css/main.css",
+			"settings":
+			{
+				"buffer_size": 74,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"Snippet: html",
+				"Snippet: html"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 138.0,
+		"history":
+		[
+			"-u",
+			"- u \"C:\\Users\\Karan\\django_projects\\djangocoreyshafer2\\shafer2\\\"",
+			"cmd",
+			"python manage.py runserver",
+			"manage.py runserver",
+			"cd",
+			"import os",
+			"os",
+			"/cd",
+			"cd",
+			"manage.py runserver",
+			"runserver",
+			"manage.py",
+			"import socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((\"localhost\", 52687))",
+			"/cd",
+			"cd",
+			"/cd",
+			"cd",
+			"Package Control: Install Package",
+			"Package Control",
+			"index.html"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Karan/django_projects/ecommerce",
+		"/C/Users/Karan/django_projects/ecommerce/src",
+		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj",
+		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj/css"
+	],
+	"file_history":
+	[
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/django_first/django_first/urls.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/django_first/blog/urls.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/manage.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/etest.txt",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/shafer2/wsgi.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/shafer2/settings.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/templates/blog/user_posts.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/templates/blog/base.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/templates/blog/home.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/views.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/urls.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/shafer2/urls.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/apps.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/templates/user/change_password.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/models.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/templates/user/profile.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/views.py",
+		"/C/Users/Karan/KiteOnboarding.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/forms.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/migrations/0001_initial.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/templates/blog/post2_detail.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/static/blog/main.css",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/templates/blog/post2_confirm_delete.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/templates/blog/post2_form.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/models.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/signals.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/templates/blog/post2_create.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/static/blog/main2.css",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/coreyshafer2.sublime-project",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/User/Python Django.sublime-settings",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/Python (Django).sublime-settings",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/templates/user/register.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/apps.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/admin.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/templates/user/logout.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/templates/user/login.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/urls.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/user/static/user/main.css",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/shafer2/asdkfsd.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/testing.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/admin.py",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/HTML (Django).sublime-settings",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/User/Python (Django).sublime-settings",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/blog/templates/blog/about.html",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/db.sqlite3",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/shafer2/cmdfile",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/Karan/django_projects/djangocoreyshafer/djangocoreyshafer_project.sublime-project",
+		"/C/Users/Karan/sublimetexttesting/testingsublimetext",
+		"/C/Users/Karan/django_projects/djangocoreyshafer/blog/urls.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer/djangocoreyshafer/urls.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer/blog/views.py",
+		"/C/Users/Karan/django_projects/djangocoreyshafer/manage.py",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/Karan/Websites/Website testing/pages/Linking.html",
+		"/C/Users/Karan/Websites/Website testing/Linking.html",
+		"/C/Users/Karan/Websites/Website testing/tables.html",
+		"/C/Users/Karan/Websites/Website testing/index.html",
+		"/C/Users/Karan/Websites/Website testing/main.css",
+		"/C/Users/Karan/Websites/Website testing/linking2.html",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Karan/Websites/Website testing/Starting tags.html",
+		"/C/Users/Karan/Websites/Website testing/Page 4.html",
+		"/C/Users/Karan/Websites/Website testing/Page 3.html",
+		"/C/Users/Karan/Websites/Website testing/website project.sublime-project",
+		"/C/Users/Karan/Websites/Website testing/website project.sublime-workspace",
+		"/C/Users/Karan/Websites/Website testing/website workspace.sublime-workspace"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Karan/django_projects/ecommerce/src/static_myproj/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 74,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74,
+								74
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS3/CSS3.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 156.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 156.0
+	},
+	"output.exec":
+	{
+		"height": 243.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "ecomm_sublime_text.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

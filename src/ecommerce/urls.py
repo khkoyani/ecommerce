@@ -28,9 +28,11 @@ from product import views as product_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', products_views.home, name='home'),
+    path('', product_views.home, name='home'),
     path('about/', base_views.about, name='about'),
     path('contact/', base_views.contact, name='contact'),
+    path('login/', base_views.UserLogIn.as_view(), name='login'),
+    path('logout/', base_views.UserLogOut.as_view(), name='logout'),
 ]
 
 if settings.DEBUG:

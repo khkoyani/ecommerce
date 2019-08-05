@@ -2,14 +2,13 @@
 
 
 {% block heading %}
-<h1>Contact Form</h1>
+    <h1>Log In</h1>
 {% endblock heading %}
 
 {% block form %}
     <form method="POST">
     {% csrf_token %}
-    {{form}}
-        <button type="submit" class="btn btn-primary">Submit</button>
+    {{form.as_p}}
+        <button type="submit" class="btn btn-primary btn-lg">LogIn</button>
     </form>
 {% endblock form %}
-
