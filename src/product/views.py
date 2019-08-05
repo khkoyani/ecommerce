@@ -3,11 +3,7 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Product
 
-def home(request):
-    context = {
-        'content': 'content'
-    }
-    return render(request, 'product/home.html', context)
+
 
 
 
@@ -19,4 +15,18 @@ class ProductListView(ListView):
     #     print(context)
     #     return context
 #     used to find all the variables sent to template
+
+class ProductDetailView(DetailView):
+    model = Product
+
+class ProductCreateView(CreateView):
+    pass
+
+class ProductUpdateView(UpdateView):
+    pass
+
+class ProductDeleteView(DeleteView):
+    pass
+
+
 

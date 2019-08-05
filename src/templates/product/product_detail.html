@@ -5,10 +5,18 @@
 <h1>Product Details</h1>
 {% endblock %}
 
-{% block form %}
-{% endblock %}
 
 
 {% block content %}
+<p>
+    {{product.title}}<br>
+    {{product.price}}<br>
+    {{product.description}}
+</p>
 {% endblock %}
 
+
+<!--{ context data
+'object': <Product: Hat>,
+'product': <Product: Hat>,
+'view': <product.views.ProductDetailView object at 0x05157830>}-->
