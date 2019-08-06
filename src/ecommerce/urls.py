@@ -33,7 +33,7 @@ urlpatterns = [
     path('contact/', base_views.contact, name='contact'),
     path('login/', base_views.UserLogIn.as_view(), name='login'),
     path('logout/', base_views.UserLogOut.as_view(), name='logout'),
-    path('product/', include('product.urls')),
+    path('product/', include(('product.urls', 'product'), namespace='product')),
     path('test/', base_views.card, name='card')
 ]
 
