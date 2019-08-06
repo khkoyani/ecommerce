@@ -23,3 +23,6 @@ class UserLogIn(LoginView):
 class UserLogOut(LogoutView):
     template_name = 'auth/logout.html'
     url = 'login'
+
+def card(request):
+    return render(request, 'product/snippets/card.html')

@@ -1,19 +1,17 @@
 {% extends "base.html" %}
 
 
-{% block heading %}
-<h1>Product List</h1>
-{% endblock %}
-
-
 {% block content %}
+<div class="container">
+    <div class="row">
+        <h1>Product List</h1> </div>
+    <div class="row">
+        {% for product in product_list %}
+        {% include "product/snippets/card.html" with instance=product %}
+        {% endfor %}
+    </div>
+</div>
 
-    {% for product in product_list %}
-    <p>{{product.title}}<br>
-        {{product.price}}<br>
-        {{product.description}}
-        </p>
-    {% endfor %}
 
 {% endblock %}
 

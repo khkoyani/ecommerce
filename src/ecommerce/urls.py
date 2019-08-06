@@ -34,6 +34,7 @@ urlpatterns = [
     path('login/', base_views.UserLogIn.as_view(), name='login'),
     path('logout/', base_views.UserLogOut.as_view(), name='logout'),
     path('product/', include('product.urls')),
+    path('test/', base_views.card, name='card')
 ]
 
 if settings.DEBUG:

@@ -1,17 +1,15 @@
 {% extends "base.html" %}
 
 
-{% block heading %}
-<h1>Product Details</h1>
-{% endblock %}
-
-
 
 {% block content %}
+<h1> Product Details </h1>
 <p>
     {{product.title}}<br>
     {{product.price}}<br>
-    <img src="{{product.image.url}}" class="img-fluid"><br>
+    {% if product.image %}
+        <img src="{{product.image.url}}" class="img-fluid"><br>
+    {% endif %}
     {{product.description}}
 </p>
 {% endblock %}

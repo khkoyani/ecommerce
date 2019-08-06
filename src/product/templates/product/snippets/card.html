@@ -1,0 +1,15 @@
+<div class="col">
+  <div class="card" style="width: 18rem;">
+    <h5 class="card-body card-title">{{instance.title}}</h5>
+    {% if instance.image %}
+    <a href="{{instance.image.url}}">
+      <img class="card-img-top" src="{{instance.image.url}}" alt="picture of {{instance.title}}"></a>
+    {% endif %}
+    <div class="card-body">
+      <p class="card-text">{{instance.description}}<br>
+        {{instance.price}}</p>
+      <a href="{% url 'product-detail' instance.slug %}" class="btn btn-primary">View</a>
+    </div>
+  </div>
+</div>
+

@@ -7,10 +7,6 @@ from django.db.models.signals import pre_save, post_save
 from django.dispatch import receiver
 
 
-
-
-
-
 class ProductManager(models.Manager):
     def get_objects_by_slug(self, slug):
         return self.get_queryset().filter(slug=slug) or None
@@ -30,29 +26,15 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     slug = models.SlugField(db_index=True, null=True, blank=True, unique=True)
     image = models.ImageField(upload_to=upload_image_path, blank=True, null=True)
+    feature = models.BooleanField(default=False)
 
     objects = ProductManager()
 
     def __str__(self):
         return self.title
 
-    # def get_unique_slug(self):
-    #     slug = slugify(self.title)
-    #     unique_slug = slug
-    #     num = 1
-    #     while self.objects.filter(slug=unique_slug).exists:
-    #         unique_slug = f'{unique_slug}-{num}'
-    #         num+=1
-    #     return unique_slug
-    #
-    # def save(self, *args, **kwargs):
-    #     if not self.slug:
-    #         self.slug = self.get_unique_slug()
-    #     super(Product, self).save(*args, **kwargs)
-
     def get_absolute_url(self):
         return reverse('product-detail', kwargs={'slug': self.slug})
-
 
 
 @receiver(pre_save, sender=Product)
