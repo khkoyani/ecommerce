@@ -11,8 +11,7 @@ def about(request):
 def contact(request):
     form = ContactForm(request.POST or None)
     if form.is_valid():
-        print(form.cleaned_data)
-    context = {'title': 'contact us', 'form': form}
+        context = {'title': 'contact us', 'form': form}
     return render(request, 'contact/contact.html', context)
 
 class UserLogIn(LoginView):
