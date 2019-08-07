@@ -20,6 +20,7 @@ from django.urls import path, include
 from . import views as base_views
 from product import views as product_views
 from search import views
+from carts import views
 
 
 
@@ -38,6 +39,7 @@ urlpatterns = [
     path('product/', include(('product.urls', 'product'), namespace='product')),
     path('test/', base_views.card, name='card'),
     path('search/', include(('search.urls', 'search'), namespace='search')),
+    path('cart/', include(('carts.urls', 'carts'), namespace='cart')),
 ]
 
 if settings.DEBUG:
