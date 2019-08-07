@@ -33,6 +33,7 @@ AUTH_USER_MODEL = 'auth.User'
 INSTALLED_APPS = [
     'product.apps.ProductConfig',
     'search.apps.SearchConfig',
+    'tags.apps.TagsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
