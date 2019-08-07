@@ -5,6 +5,7 @@ from django.http import Http404
 from .utils import unique_slug_generator, upload_image_path
 from django.db.models.signals import pre_save, post_save
 from django.dispatch import receiver
+from django.db.models import Q
 
 class Extended_QuerySet(models.query.QuerySet):
     def active(self):
@@ -12,6 +13,10 @@ class Extended_QuerySet(models.query.QuerySet):
 
     def featured(self):
         return self.filter(featured=True, active=True)
+
+    def search(self, query):
+        lookups = Q(title__icontains=query) | Q(description__icontains=query)
+        return self.filter(lookups)
 
 #     def get_obj_by_slug
 class ProductManager(models.Manager):
@@ -33,6 +38,8 @@ class ProductManager(models.Manager):
             raise Http404(f'Multiple objects for slug "{qs.first.slug}"')
         return qs.first()
 
+    def search(self, query):
+        return self.get_queryset().search(query)
 
 
 

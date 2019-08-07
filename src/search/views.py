@@ -13,15 +13,10 @@ class SearchProductView(ListView):
         print(f'context = {context}')
         return context
 
-
-
     def get_queryset(self, *args, **kwargs):
         request = self.request
         query = request.GET.get('q')
         if query is not None:
-            lookups = Q(title__icontains=query) | Q(description__icontains=query)
-            print(f'lookups = {lookups}')
-            print(Product.objects.filter(lookups))
-            return Product.objects.filter(lookups)
+            return Product.objects.search(query)
         return Product.objects.none()
 # Create your views here.
