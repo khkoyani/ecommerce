@@ -1,0 +1,32 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
+body {
+    background: #7a8289;
+    }
+
+.navbar {
+    background: #0067B6;
+    padding: .5rem 2rem;
+    margin: 0
+    }
+
+button.custom {
+    color: white;
+    border-color: white;
+    }
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+@media only screen and (min-width: 1200px) {
+.container {
+    max-width: 1400px;
+}
+}

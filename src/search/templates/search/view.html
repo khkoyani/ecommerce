@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="row py-4 mt-5 justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+        <form  method="GET" action="{% url 'search:query' %}" class="card card-sm">
+            <div class="card-body row no-gutters align-items-center">
+                <div class="col-auto">
+                    <i class="fas fa-search h4 text-body"></i>
+                </div>
+                <div class="col">
+                    <input class="form-control form-control-lg form-control-borderless" type="search" name='q' value='{{request.GET.q}}'
+                           placeholder="Search topics or
+                           keywords">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-lg btn-success" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-12"><hr></div>
+
+    {% if query %}
+    <div class="col-12  ">
+        <h4 class="text-center">Results for: "{{query}}"</h4>
+    </div>
+    {% endif %}
+</div>
+
+<div class="row">
+    {% for obj in object_list %}
+        <div class="col-12 col-md-6 col-xl-4 my-3">
+        {% include "product/snippets/card.html" with instance=obj %}</div>
+
+    {% endfor %}
+</div>
+{% endblock %}

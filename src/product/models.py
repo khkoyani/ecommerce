@@ -22,6 +22,7 @@ class ProductManager(models.Manager):
 
 class Product(models.Model):
     title = models.CharField(max_length=120, verbose_name='product_name', unique=False)
+    timestamp = models.DateTimeField(auto_now_add=True)
     description = models.TextField(null=True, blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     slug = models.SlugField(db_index=True, null=True, blank=True, unique=True)

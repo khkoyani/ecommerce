@@ -19,6 +19,8 @@ from django.conf.urls.static import static
 from django.urls import path, include
 from . import views as base_views
 from product import views as product_views
+from search import views
+
 
 
 
@@ -34,7 +36,8 @@ urlpatterns = [
     path('login/', base_views.UserLogIn.as_view(), name='login'),
     path('logout/', base_views.UserLogOut.as_view(), name='logout'),
     path('product/', include(('product.urls', 'product'), namespace='product')),
-    path('test/', base_views.card, name='card')
+    path('test/', base_views.card, name='card'),
+    path('search/', include(('search.urls', 'search'), namespace='search')),
 ]
 
 if settings.DEBUG:

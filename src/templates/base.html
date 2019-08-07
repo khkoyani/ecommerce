@@ -12,22 +12,12 @@
 
   </head>
   <body>
-    {% include "base/nav_bar.html" with sample_variable="eCommerce" %}
+    {% include "base/nav_bar.html" %}
     <!--block content-->
-    <div class="container">
-
-        <div class="row">
-            <div class="col">
-                {% block content %}{% endblock %}
-            </div>
-        </div>
-    </div>
+    <div class="container">{% block content %}{% endblock %}</div>
 
 
+    {% include "base/js.html" %}
 
-
-
-
-  {% include "base/js.html" %}
   </body>
 </html>

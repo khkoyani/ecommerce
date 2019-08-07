@@ -5,12 +5,13 @@
 {% block content %}
 <h1> Product Details </h1>
 <p>
-    {{product.title}}<br>
-    {{product.price}}<br>
+    {{product.title|title}}<br>
+    Price: ${{product.price}}<br>
+    Created: {{product.timestamp|timesince}} ago <br>
     {% if product.image %}
         <img src="{{product.image.url}}" class="img-fluid"><br>
     {% endif %}
-    {{product.description}}
+    {{product.description|linebreaks}}
 </p>
 {% endblock %}
 
