@@ -6,11 +6,25 @@ from .utils import unique_slug_generator, upload_image_path
 from django.db.models.signals import pre_save, post_save
 from django.dispatch import receiver
 
+class Extended_QuerySet(models.query.QuerySet):
+    def active(self):
+        return self.filter(active=True)
 
+    def featured(self):
+        return self.filter(featured=True, active=True)
+
+#     def get_obj_by_slug
 class ProductManager(models.Manager):
+    def get_queryset(self):
+        return Extended_QuerySet(self.model, using=self._db)
+
+    def all(self):
+        return self.get_queryset().all()
+    # normally .all has to be called on a queryset object. but defining the method in
+    # the model manager like this will allow to be called as Product.objects.all
     def get_objects_by_slug(self, slug):
         return self.get_queryset().filter(slug=slug) or None
-        # get_queryset by default = Model.objects.all()
+
     def get_single_object_by_slug (self, slug):
         qs = self.get_objects_by_slug(slug)
         if qs is None:
@@ -18,6 +32,15 @@ class ProductManager(models.Manager):
         if qs.count() > 1:
             raise Http404(f'Multiple objects for slug "{qs.first.slug}"')
         return qs.first()
+
+
+
+
+
+
+
+
+
 
 
 class Product(models.Model):
