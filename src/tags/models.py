@@ -6,8 +6,8 @@ from django.dispatch import receiver
 from django.urls import reverse
 
 class Tag(models.Model):
-    title=models.CharField(max_length=120, unique=False)
-    slug=models.SlugField(unique=False, blank=True, null=True)
+    title=models.CharField(max_length=120, unique=True)
+    slug=models.SlugField(unique=True, blank=True, null=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=True)
     products = models.ManyToManyField(Product, blank=True)

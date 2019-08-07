@@ -15,8 +15,14 @@ class Extended_QuerySet(models.query.QuerySet):
         return self.filter(featured=True, active=True)
 
     def search(self, query):
-        lookups = Q(title__icontains=query) | Q(description__icontains=query)
-        return self.filter(lookups)
+        lookups = (Q(title__icontains=query) | Q(description__icontains=query) | Q(price__icontains=query) |
+                   Q(tag__title__icontains=query)
+                   )
+        return self.filter(lookups).distinct()
+
+# if tag is a foriegn field instead of a field like title then do like as follows
+# Q(tag__title__icontains=query) NOTE: its not tag__set__title
+
 
 #     def get_obj_by_slug
 class ProductManager(models.Manager):
@@ -40,12 +46,6 @@ class ProductManager(models.Manager):
 
     def search(self, query):
         return self.get_queryset().search(query)
-
-
-
-
-
-
 
 
 
