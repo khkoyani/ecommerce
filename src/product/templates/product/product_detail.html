@@ -3,16 +3,35 @@
 
 
 {% block content %}
-<h1> Product Details </h1>
-<p>
-    {{product.title|title}}<br>
-    Price: ${{product.price}}<br>
-    Created: {{product.timestamp|timesince}} ago <br>
-    {% if product.image %}
-        <img src="{{product.image.url}}" class="img-fluid"><br>
-    {% endif %}
-    {{product.description|linebreaks}}
-</p>
+<div class="row">
+    <div class="col-12 col-md-6">
+        <h1> Product Details </h1>
+        <p>
+            {{product.title|title}}<br>
+            Price: ${{product.price}}<br>
+            Created: {{product.timestamp|timesince}} ago <br>
+            {% if product.image %}
+                <img src="{{product.image.url}}" class="img-fluid"><br>
+            {% endif %}
+            {{product.description|linebreaks}}
+        </p>
+    </div>
+    <div class="col-12 col-md-6">
+        {{cart}}
+        {% if product in cart.products.all %}
+        <button>Remove from cart</button>
+
+        {% else %}
+        <button>Add to cart</button>
+        {% endif %}
+
+
+    </div>
+
+</div>
+
+
+
 {% endblock %}
 
 
