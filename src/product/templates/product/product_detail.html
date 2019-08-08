@@ -17,15 +17,7 @@
         </p>
     </div>
     <div class="col-12 col-md-6">
-        {{cart}}
-        {% if product in cart.products.all %}
-        <button>Remove from cart</button>
-
-        {% else %}
-        <button>Add to cart</button>
-        {% endif %}
-
-
+      {% include "product/snippets/update_cart.html" with product=product cart=cart %}
     </div>
 
 </div>

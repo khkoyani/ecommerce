@@ -10,8 +10,9 @@ def about(request):
 
 def contact(request):
     form = ContactForm(request.POST or None)
+    context = {'title': 'contact us', 'form': form}
     if form.is_valid():
-        context = {'title': 'contact us', 'form': form}
+        context['form'] = form
     return render(request, 'contact/contact.html', context)
 
 class UserLogIn(LoginView):
