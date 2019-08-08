@@ -12,6 +12,9 @@ class CartManager(models.Manager):
             user_obj = user
         return self.get_queryset().create(user=user_obj)
 
+    def first(self):
+        return self.get_queryset().all().first()
+
     def get_or_new(self, request):
         cart_id = request.session.get('cart_id', None)
         # it was qs=Cart.objects.filter now its self.getqueryset

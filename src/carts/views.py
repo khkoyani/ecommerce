@@ -2,7 +2,10 @@ from django.shortcuts import render,redirect
 from .models import Cart
 from product.models import Product
 
+
+
 def cart_home(request):
+
     cart_obj, new_obj = Cart.objects.get_or_new(request)
     # cart_obj.save()
     context = {'cart': cart_obj}
