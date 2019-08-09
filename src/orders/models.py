@@ -3,6 +3,7 @@ from carts.models import Cart
 from product.models import Product
 from product.utils import unique_order_id_gen
 from django.db.models.signals import pre_save, post_save
+from decimal import *
 
 order_status_choices = (
     ('created', 'Created'),
@@ -18,12 +19,12 @@ class Order(models.Model):
     # billing_address
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
     status = models.CharField(max_length=120, default='created', choices=order_status_choices)
-    shipping_total = models.DecimalField(default=5.99, decimal_places=2, max_digits=10)
-    order_total = models.DecimalField(default=1.00, decimal_places=2, max_digits=10)
-
+    shipping_total = models.DecimalField(default=Decimal(5.00), decimal_places=2, max_digits=10)
+    order_total = models.DecimalField(default=0.00, decimal_places=2, max_digits=10)
     def __str__(self):
         return self.order_id
 
+    # self.amount = decimal.Decimal(float(amount))
     def update_total(self):
         cart_total = self.cart.total
         shipping_total = self.shipping_total
