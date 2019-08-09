@@ -6,9 +6,5 @@
 {% endblock heading %}
 
 {% block content %}
-    <form method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-        <button type="submit" class="btn btn-primary btn-lg">LogIn</button>
-    </form>
+{% include "accounts/snippets/login_form.html" %}
 {% endblock %}

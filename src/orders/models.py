@@ -4,6 +4,7 @@ from product.models import Product
 from product.utils import unique_order_id_gen
 from django.db.models.signals import pre_save, post_save
 from decimal import *
+from billing.models import BillingProfile
 
 order_status_choices = (
     ('created', 'Created'),
