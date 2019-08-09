@@ -23,6 +23,15 @@ def unique_slug_generator(instance, new_slug=None):
         return unique_slug_generator(instance, new_slug=new_slug)
     return slug
 
+def unique_order_id_gen(instance,):
+    new_id = random_string_generator()
+    Klass = instance.__class__
+    qs_exists = Klass.objects.filter(order_id=new_id).exists()
+    if qs_exists:
+        return unique_order_id_gen(instance)
+    return new_id
+
+
 
 def file_ext(filepath):
     base_name = os.path.basename(filepath)
