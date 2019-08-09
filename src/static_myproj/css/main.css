@@ -1,7 +1,7 @@
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
 
 body {
-    background: #7a8289;
+    background: #F0F8FF;
     }
 
 .navbar {
@@ -26,6 +26,12 @@ hr {
 }
 
 @media only screen and (min-width: 1200px) {
+.container {
+    max-width: 1300px;
+}
+}
+
+@media only screen and (min-width: 1500px) {
 .container {
     max-width: 1400px;
 }

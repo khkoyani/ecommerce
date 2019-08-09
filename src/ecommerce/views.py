@@ -14,15 +14,3 @@ def contact(request):
     if form.is_valid():
         context['form'] = form
     return render(request, 'contact/contact.html', context)
-
-class UserLogIn(LoginView):
-    template_name = 'auth/login.html'
-    success_url = ''
-    redirect_field_name = settings.REDIRECT_FIELD_NAME
-
-class UserLogOut(LogoutView):
-    template_name = 'auth/logout.html'
-    url = 'login'
-
-def card(request):
-    return render(request, 'product/snippets/card.html')

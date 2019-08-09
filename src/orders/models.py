@@ -20,7 +20,8 @@ class Order(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
     status = models.CharField(max_length=120, default='created', choices=order_status_choices)
     shipping_total = models.DecimalField(default=Decimal(5.00), decimal_places=2, max_digits=10)
-    order_total = models.DecimalField(default=0.00, decimal_places=2, max_digits=10)
+    order_total = models.DecimalField(default=Decimal(0.00), decimal_places=2, max_digits=10)
+
     def __str__(self):
         return self.order_id
 
@@ -49,5 +50,6 @@ post_save.connect(post_save_cart_total, sender=Cart)
 
 def post_save_new_order(sender, instance, created, *args, **kwargs):
     if created:
+        print(created)
         instance.update_total()
 post_save.connect(post_save_new_order, sender=Order)

@@ -2,7 +2,13 @@
 
 
 {% block content %}
-<h1>checkout</h1>
-
+<h1>Checkout</h1>
+<hr>
+<h3>Order Summary</h3>
 <p>Cart Total: {{object.order_total}}</p>
+<p>Shipping Charges: {{object.shipping_total}}</p>
+<p>Order Total: {{object.order_total}}</p>
+
+<h3>Shipping Address</h3>
+<h3>Billing Address</h3>
 {% endblock content %}

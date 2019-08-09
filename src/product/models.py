@@ -6,6 +6,7 @@ from .utils import unique_slug_generator, upload_image_path
 from django.db.models.signals import pre_save, post_save
 from django.dispatch import receiver
 from django.db.models import Q
+from decimal import *
 
 class Extended_QuerySet(models.query.QuerySet):
     def active(self):
@@ -54,7 +55,7 @@ class Product(models.Model):
     title = models.CharField(max_length=120, verbose_name='product_name', unique=False)
     timestamp = models.DateTimeField(auto_now_add=True)
     description = models.TextField(null=True, blank=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    price = models.DecimalField(default=Decimal(0.00), max_digits=10, decimal_places=2)
     slug = models.SlugField(db_index=True, null=True, blank=True, unique=True)
     image = models.ImageField(upload_to=upload_image_path, blank=True, null=True)
     feature = models.BooleanField(default=False)

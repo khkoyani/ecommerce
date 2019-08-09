@@ -34,12 +34,10 @@ urlpatterns = [
     path('', product_views.ProductListView.as_view(), name='home'),
     path('about/', base_views.about, name='about'),
     path('contact/', base_views.contact, name='contact'),
-    path('login/', base_views.UserLogIn.as_view(), name='login'),
-    path('logout/', base_views.UserLogOut.as_view(), name='logout'),
     path('product/', include(('product.urls', 'product'), namespace='product')),
-    path('test/', base_views.card, name='card'),
     path('search/', include(('search.urls', 'search'), namespace='search')),
     path('cart/', include(('carts.urls', 'carts'), namespace='cart')),
+    path('accounts/', include(('accounts.urls', 'accounts'), namespace='accounts')),
 ]
 
 if settings.DEBUG:

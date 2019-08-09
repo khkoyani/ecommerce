@@ -7,21 +7,24 @@
     <h1>Products in Cart</h1></div></div>
 <!--<div class="row">-->
 <!--  <div class="col-12 col-md-6 col-xl-4">-->
+    {% if cart.products.first is None%}
+    Cart is empty
+    {% else %}
+  <div class="col-12 col-lg-10 mx-auto">
     <table class="table table-dark">
       <thead>
-
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Item</th>
+        <th scope="col" width="60%" class="px-5">Item</th>
         <th scope="col">Price</th>
       </tr>
-
       </thead>
+
       <tbody>
       {% for product in cart.products.all %}
       <tr>
         <th scope="row">{{forloop.counter}}</th>
-        <td><a href="{{product.get_absolute_url}}">{{product.title}}</a>
+        <td class="px-5" ><a href="{{product.get_absolute_url}}">{{product.title}}</a>
           {% include "product/snippets/update_cart.html" with product=product cart=cart from_cart=True %}
         <td>{{product.price}}</td>
       </tr>
@@ -34,10 +37,14 @@
         <td colspan="2"><strong>Total</strong></td>
         <td>{{cart.total}}</td>
       </tr>
+      <tr>
+        <td colspan="2"><strong></strong></td>
+        <td><a href="{% url 'cart:checkout' %}" class="btn btn-danger">CheckOut</a></td>
+      </tr>
       </tbody>
-    </table>
-  </div>
-</div>
 
+    </table>
+      </div>
+    {% endif %}
 
 {% endblock %}
