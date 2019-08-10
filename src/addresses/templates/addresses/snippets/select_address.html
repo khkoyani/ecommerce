@@ -1,0 +1,22 @@
+{% if address_qs.exists%}
+<div class="col-12 col-md-6 pl-md-5 pl-4">
+  <div class="row"><strong>Previous addresses</strong></div>
+    <form action="{% url 'addresses:saved_addresses'%}" method="POST">{% csrf_token %}
+        {% if next_url %}
+              <input type="hidden" name="next" value="{{next_url}}">
+        {% endif %}
+        {% if address_type %}
+              <input type="hidden" name="address_type" value="{{address_type}}">
+        {% endif %}
+        {% for address in address_qs %}
+              <div class="row">
+                <label for="address-{{address.id}}">
+                  <input id="address-{{address.id}}" type="radio" name="shipping_address" value="{{address.id}}">
+                  {{address.address_line_1}}
+                </label>
+              </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-success">Use this address</button>
+    </form>
+</div>
+{% endif %}

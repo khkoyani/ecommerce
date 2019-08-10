@@ -38,6 +38,7 @@ urlpatterns = [
     path('search/', include(('search.urls', 'search'), namespace='search')),
     path('cart/', include(('carts.urls', 'carts'), namespace='cart')),
     path('accounts/', include(('accounts.urls', 'accounts'), namespace='accounts')),
+    path('addresses/', include(('addresses.urls', 'addresses'), namespace='addresses')),
 ]
 
 if settings.DEBUG:
