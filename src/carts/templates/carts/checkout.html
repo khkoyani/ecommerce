@@ -49,15 +49,25 @@
 {% else %}
 
 
-
+<div class="row">
+  <div class="col-md-7 col-10 mx-auto text-left pl-5 pl-md-0">
 <h3>Order Summary</h3>
+<p>
+  {% for product in object.cart.products.all %}
+Items: {{product}} <br>
+{% endfor %}
+
+
+<p>Shipping Address: <br> {{object.shipping_address.get_address|linebreaksbr|title }}</p>
+<p>Billing Address: <br> {{object.billing_address.get_address|linebreaksbr|title }}</p>
 <p>Cart Total: {{object.order_total}}</p>
 <p>Shipping Charges: {{object.shipping_total}}</p>
 <p>Order Total: {{object.order_total}}</p>
 <form action="" method="POST" class="form">{% csrf_token %}
-  <button type="submit" class="btn btn-danger">Checkout</button>
+  <button type="submit" class="btn btn-danger">Submit Order</button>
 </form>
-
+  </div>
+</div>
 {% endif %}
 {% endif %}
 {% endblock content %}
