@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from django.http import JsonResponse
 from .models import Cart
 from product.models import Product
 from orders.models import Order
@@ -24,9 +25,19 @@ def cart_update(request):
         cart_obj, new_obj = Cart.objects.get_or_new(request)
         if obj in cart_obj.products.all():
             cart_obj.products.remove(obj)
+            added = False
         else:
             cart_obj.products.add(obj)
+            added = True
         request.session['cart_items'] = cart_obj.products.count()
+        cart_count = cart_obj.products.count()
+        if request.is_ajax():
+            json_context = {
+                'added': added,
+                'removed': not added,
+                'cartCount': cart_count
+            }
+            return JsonResponse(json_context)
     return redirect(to='cart:home')
 
 def checkout(request):

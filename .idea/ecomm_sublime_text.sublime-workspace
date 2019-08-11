@@ -172,10 +172,19 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Karan/django_projects/ecommerce/src/static_myproj/css/main.css",
+			"file": "/C/Users/Karan/django_projects/ecommerce/jquery/index.html",
 			"settings":
 			{
-				"buffer_size": 74,
+				"buffer_size": 1213,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Karan/django_projects/ecommerce/jquery/jquery.js",
+			"settings":
+			{
+				"buffer_size": 51,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -283,12 +292,16 @@
 	"expanded_folders":
 	[
 		"/C/Users/Karan/django_projects/ecommerce",
+		"/C/Users/Karan/django_projects/ecommerce/jquery",
 		"/C/Users/Karan/django_projects/ecommerce/src",
 		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj",
 		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj/css"
 	],
 	"file_history":
 	[
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript-Completions.sublime-settings",
+		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
+		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj/css/main.css",
 		"/C/Users/Karan/django_projects/djangocoreyshafer2/django_first/django_first/urls.py",
 		"/C/Users/Karan/django_projects/djangocoreyshafer2/django_first/blog/urls.py",
 		"/C/Users/Karan/django_projects/djangocoreyshafer2/shafer2/manage.py",
@@ -400,30 +413,65 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Karan/django_projects/ecommerce/src/static_myproj/css/main.css",
+					"file": "/C/Users/Karan/django_projects/ecommerce/jquery/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 74,
+						"buffer_size": 1213,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								74,
-								74
+								754,
+								754
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS3/CSS3.sublime-syntax"
+							"SL.31.region_keys":
+							[
+							],
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Karan/django_projects/ecommerce/jquery/jquery.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 51,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"SL.32.region_keys":
+							[
+							],
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

@@ -27,7 +27,7 @@
       </li>
          <li class="nav-item {% if request.path == contact_url %}active{% endif %}">
         <a class="nav-link" href="{{cart_url}}">
-          <i class="fa fa-shopping-cart " aria-hidden="true"></i> {{request.session.cart_items}}</a>
+          <i class="fa fa-shopping-cart " aria-hidden="true"></i> <span class="navbar-cart-count">{{request.session.cart_items}}</span></a>
       </li>
 
 <!--      <li class="nav-item dropdown">-->
