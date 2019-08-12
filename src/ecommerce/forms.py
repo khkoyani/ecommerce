@@ -17,6 +17,8 @@ class ContactForm(forms.Form):
 
     def clean_email(self):
         email = self.cleaned_data.get("email")
-        if not '.com' in email:
-            raise forms.ValidationError('Enter a valid email address')
+        print(1)
+        if '.com' not in email:
+            print(2)
+            raise forms.ValidationError('Email has to contain ".com"')
         return email
