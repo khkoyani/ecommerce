@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b48b057-47ae-4fb6-86d3-3bf54afdd4c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/static_myproj/js/eCommerce.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ecommerce/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecommerce/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ecommerce/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecommerce/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/search/templates/search/snippets/search-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/search/templates/search/snippets/search-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/base/css.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base/css.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/base/js.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base/js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/contact/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/contact/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_cdn/static_root/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static_cdn/static_root/css/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/src/ecommerce/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -31,11 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ecommerce/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="391">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/static_myproj/js/eCommerce.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -163,6 +168,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="static_cdn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="static_cdn" type="462c0819:PsiDirectoryNode" />
+              <item name="static_root" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
@@ -476,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565589688077</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="added async contact form submit feature with alert messages for errors and success">
+      <created>1565648824298</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1565648824298</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -492,7 +515,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12750264" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12750264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -503,7 +526,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.22535211" />
-      <window_info active="true" anchor="bottom" x="-1044" y="38" width="1041" height="541" id="Terminal" order="8" sideWeight="0.49947312" type="WINDOWED" visible="true" weight="0.36944744" />
+      <window_info anchor="bottom" x="-1044" y="38" width="1041" height="541" id="Terminal" order="8" sideWeight="0.49947312" type="WINDOWED" visible="true" weight="0.36944744" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.28277355" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -552,7 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added unique slugs and presave signal for it to Product model" />
     <MESSAGE value="added image field and updated detailview template" />
     <MESSAGE value="added card snippet html&#10;added navbar include&#10;added css.html and js.html include&#10;&#10;updated listview to incorporate card snippet" />
     <MESSAGE value="add product namespace&#10;updated include() method in urls.py to include app_name attribute" />
@@ -577,16 +599,10 @@
     <MESSAGE value="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview" />
     <MESSAGE value="Edit 1: used .find    Status:working&#10;add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview" />
     <MESSAGE value="finished adding ajax remove function to cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished adding ajax remove function to cart" />
+    <MESSAGE value="added async contact form submit feature with alert messages for errors and success" />
+    <option name="LAST_COMMIT_MESSAGE" value="added async contact form submit feature with alert messages for errors and success" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/templates/base/css.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/carts/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -967,7 +983,7 @@
     <entry file="file://$PROJECT_DIR$/src/ecommerce/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
@@ -976,8 +992,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ecommerce/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="391">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static_myproj/js/eCommerce.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
