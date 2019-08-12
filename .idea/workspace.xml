@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b48b057-47ae-4fb6-86d3-3bf54afdd4c3" name="Default Changelist" comment="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview">
+    <list default="true" id="8b48b057-47ae-4fb6-86d3-3bf54afdd4c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product/templates/product/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/templates/product/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product/templates/product/snippets/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/templates/product/snippets/card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/product/templates/product/snippets/remove_from_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/templates/product/snippets/remove_from_cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product/templates/product/snippets/update_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/templates/product/snippets/update_cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ecommerce/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="501">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#633#665#0" expanded="true" />
               </folding>
@@ -60,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="54" column="39" lean-forward="true" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+            <state relative-caret-position="408">
+              <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -481,7 +485,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565584992365</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Edit 1: used .find    Status:working&#10;add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview">
+      <created>1565587080479</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1565587080479</updated>
+    </task>
+    <task id="LOCAL-00036" summary="finished adding ajax remove function to cart">
+      <created>1565587368739</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1565587368739</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
@@ -497,7 +515,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12750264" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12750264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -508,7 +526,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.22535211" />
-      <window_info anchor="bottom" x="-1044" y="38" width="1041" height="541" id="Terminal" order="8" sideWeight="0.49947312" type="WINDOWED" visible="true" weight="0.36944744" />
+      <window_info active="true" anchor="bottom" x="-1044" y="38" width="1041" height="541" id="Terminal" order="8" sideWeight="0.49947312" type="WINDOWED" visible="true" weight="0.36944744" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.28277355" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -557,8 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modified product model to have unique slug attributes" />
-    <MESSAGE value="added get_single_object_by_slug(slug)  method to custom model manager" />
     <MESSAGE value="added unique slugs and presave signal for it to Product model" />
     <MESSAGE value="added image field and updated detailview template" />
     <MESSAGE value="added card snippet html&#10;added navbar include&#10;added css.html and js.html include&#10;&#10;updated listview to incorporate card snippet" />
@@ -582,7 +598,9 @@
     <MESSAGE value="checkout finished&#10;&#10;project skeleton finished&#10;&#10;Remaining: styling, jquery, maybe react or angular" />
     <MESSAGE value="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly" />
     <MESSAGE value="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview" />
+    <MESSAGE value="Edit 1: used .find    Status:working&#10;add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview" />
+    <MESSAGE value="finished adding ajax remove function to cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished adding ajax remove function to cart" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/templates/base/css.html">
@@ -954,8 +972,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="54" column="39" lean-forward="true" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+        <state relative-caret-position="408">
+          <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -978,8 +996,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ecommerce/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="501">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#633#665#0" expanded="true" />
           </folding>

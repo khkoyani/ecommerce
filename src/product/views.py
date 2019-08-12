@@ -12,10 +12,11 @@ from django.http import Http404
 class ProductListView(ListView):
     model = Product
 
-    # def get_context_data(self, *args, **kwargs):
-    #     context = super(ProductListView, self).get_context_data(*args, **kwargs)
-    #     print(context)
-    #     return context
+    def get_context_data(self, *args, **kwargs):
+        context = super(ProductListView, self).get_context_data(*args, **kwargs)
+        cart_obj, new_obj = Cart.objects.get_or_new(self.request)
+        context['cart'] = cart_obj
+        return context
 #     used to find all the variables sent to template
 
 class ProductDetailView(DetailView):

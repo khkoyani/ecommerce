@@ -9,7 +9,7 @@
     {% for product in product_list %}
         <div class="col-12 col-md-6 col-xl-4">
 
-        {% include "product/snippets/card.html" with instance=product %}
+        {% include "product/snippets/card.html" with instance=product cart=cart%}
 
 </div>
 

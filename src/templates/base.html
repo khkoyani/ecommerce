@@ -37,9 +37,9 @@
                      // if view successfully handles form then want to update original html to change between added to cart and remove
                      let addbutton = thisForm.find('.alternate-add-button')
                      if (data.added) {
-                      addbutton.html('Item in cart <button type="submit" class="btn btn-link">Remove?</button>')
+                      addbutton.html('Item in cart <button type="submit" class="btn btn-link">Remove from Cart?</button>')
                     } else {
-                      addbutton.html('<button type="submit" class="btn btn-primary">Add to cart?</button>')
+                      addbutton.html('<button type="submit" class="btn btn-danger">Add to Cart?</button>')
                     }
                     let navbarCartCount = $('.navbar-cart-count')
                     if (data.cartCount > 0) {
@@ -49,6 +49,7 @@
                     }
                     let currentPath = window.location.href
                     if (currentPath.indexOf('cart') != -1) {
+                      console.log('in index')
                       refreshCart()
                     }
             },
@@ -75,12 +76,13 @@
                 window.location.href = currentUrl
               } else {
                 let cartProductRemoveForm = $(".cart-product-remove-form")
-                cartProductRemoveForm.css('display', 'block')
+                // cartProductRemoveForm.css('display', 'block')
                 cartRow.html('')
                 let counter = data.products.length
                 $.each(data.products, function(index, value){
-                  let newCartProductRemoveForm = cartProductRemoveForm.clone()
+                  let newCartProductRemoveForm = cartProductRemoveForm.clone().css('display', 'block')
                   newCartProductRemoveForm.find(".api-cart-product-id").val(value.id)
+                  console.log(newCartProductRemoveForm.find(".api-cart-product-id").val())
                   cartbody.prepend('<tr class="ajax-cart-row"><th scope="row">' + counter + '</th><td class="px-5" ><a href="' + value.url + '">' + value.name + ' ' + newCartProductRemoveForm.html() +'<td>' + value.price + '</td>')
                   counter--
                 })
