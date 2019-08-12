@@ -65,33 +65,33 @@
           let cartRow = cartbody.find(".ajax-cart-row")
           let currentUrl = window.location.href
           console.log('test')
-          // $.ajax({
-          //   url: 'api/refresh_cart/',
-          //   method: 'GET',
-          //   data: {},
-          //   success: function(data) {
-          //     console.log(data)
-          //     if (data.products.length < 1) {
-          //       window.location.href = currentUrl
-          //     } else {
-          //       let cartProductRemoveForm = $(".cart-product-remove-form")
-          //       cartProductRemoveForm.css('display', 'block')
-          //       cartRow.html('')
-          //       let counter = data.products.length
-          //       $.each(data.products, function(index, value){
-          //         let newCartProductRemoveForm = cartProductRemoveForm.clone()
-          //         newCartProductRemoveForm.find(".api-cart-product-id").val(value.id)
-          //         cartbody.prepend('<tr class="ajax-cart-row"><th scope="row">' + counter + '</th><td class="px-5" ><a href="' + value.url + '">' + value.name + ' ' + newCartProductRemoveForm.html() +'<td>' + value.price + '</td>')
-          //         counter--
-          //       })
-          //       subtotal.text(data.subtotal)
-          //       total.text(data.total)
-          //     }
-          //   },
-          //   error: function(errorData) {
-          //     console.log(errorData)
-          //   }
-          // })
+          $.ajax({
+            url: 'api/refresh_cart/',
+            method: 'GET',
+            data: {},
+            success: function(data) {
+              console.log(data)
+              if (data.products.length < 1) {
+                window.location.href = currentUrl
+              } else {
+                let cartProductRemoveForm = $(".cart-product-remove-form")
+                cartProductRemoveForm.css('display', 'block')
+                cartRow.html('')
+                let counter = data.products.length
+                $.each(data.products, function(index, value){
+                  let newCartProductRemoveForm = cartProductRemoveForm.clone()
+                  newCartProductRemoveForm.find(".api-cart-product-id").val(value.id)
+                  cartbody.prepend('<tr class="ajax-cart-row"><th scope="row">' + counter + '</th><td class="px-5" ><a href="' + value.url + '">' + value.name + ' ' + newCartProductRemoveForm.html() +'<td>' + value.price + '</td>')
+                  counter--
+                })
+                subtotal.text(data.subtotal)
+                total.text(data.total)
+              }
+            },
+            error: function(errorData) {
+              console.log(errorData)
+            }
+          })
         }
       })
     </script>
