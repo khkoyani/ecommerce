@@ -19,8 +19,8 @@ from django.conf.urls.static import static
 from django.urls import path, include
 from . import views as base_views
 from product import views as product_views
-from search import views
-from carts import views
+from search import views as search_views
+from carts import views as cart_views
 
 
 
