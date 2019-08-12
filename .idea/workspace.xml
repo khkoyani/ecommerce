@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b48b057-47ae-4fb6-86d3-3bf54afdd4c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ecomm_sublime_text.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecomm_sublime_text.sublime-workspace" afterDir="false" />
+    <list default="true" id="8b48b057-47ae-4fb6-86d3-3bf54afdd4c3" name="Default Changelist" comment="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/carts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product/templates/product/snippets/update_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/templates/product/snippets/update_cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product/templates/product/snippets/remove_from_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/templates/product/snippets/remove_from_cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/base/js.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base/js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/base/nav_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base/nav_bar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,10 +18,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/product/templates/product/snippets/update_cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="71" />
+            <state relative-caret-position="170">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ecommerce/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
-                <element signature="n#style#0;n#button#0;n#span#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="e#633#665#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/carts/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+            <state relative-caret-position="391">
+              <caret line="54" column="39" lean-forward="true" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -147,6 +164,18 @@
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="carts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
@@ -438,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565470394558</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly">
+      <created>1565507453288</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1565507453288</updated>
+    </task>
+    <task id="LOCAL-00034" summary="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview">
+      <created>1565584992365</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1565584992365</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -465,7 +508,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.22535211" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49947312" visible="true" weight="0.36944744" />
+      <window_info anchor="bottom" x="-1044" y="38" width="1041" height="541" id="Terminal" order="8" sideWeight="0.49947312" type="WINDOWED" visible="true" weight="0.36944744" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.28277355" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -514,8 +557,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finished contact form, login, logout" />
-    <MESSAGE value="added Product ListView" />
     <MESSAGE value="modified product model to have unique slug attributes" />
     <MESSAGE value="added get_single_object_by_slug(slug)  method to custom model manager" />
     <MESSAGE value="added unique slugs and presave signal for it to Product model" />
@@ -539,7 +580,9 @@
     <MESSAGE value="created address model" />
     <MESSAGE value="added ability to use presaved address for logged in users" />
     <MESSAGE value="checkout finished&#10;&#10;project skeleton finished&#10;&#10;Remaining: styling, jquery, maybe react or angular" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkout finished&#10;&#10;project skeleton finished&#10;&#10;Remaining: styling, jquery, maybe react or angular" />
+    <MESSAGE value="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly" />
+    <MESSAGE value="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ajax call to cart update view to asynchronously update cart&#10;&#10;added to success function to update add to cart and remove button accordingly&#10;&#10;added to success function to update navbar cart count accordingly&#10;&#10;reset to here after problems with adding ajax remove button on cartview" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/templates/base/css.html">
@@ -797,16 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/carts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/orders/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-95">
@@ -840,16 +873,6 @@
           <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ecommerce/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="34" column="51" lean-forward="true" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding>
-            <element signature="e#633#665#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -922,16 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/product/templates/product/snippets/update_cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#span#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/base/nav_bar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -941,8 +954,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+        <state relative-caret-position="391">
+          <caret line="54" column="39" lean-forward="true" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/product/templates/product/snippets/update_cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ecommerce/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

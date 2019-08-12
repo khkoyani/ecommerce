@@ -23,9 +23,10 @@
         let productForm = $('.ajax-product-form')
         productForm.submit(function(event) {
           event.preventDefault();
-          let action = productForm.attr('action')
-          let httpmethod = productForm.attr('method')
-          let formData = productForm.serialize()
+          let thisForm=$(this)
+          let action = thisForm.attr('action');
+          let httpmethod = thisForm.attr('method');
+          let formData = thisForm.serialize();
           console.log(action, httpmethod, formData)
           $.ajax({
             url: action,
@@ -34,7 +35,7 @@
             success: function(data){
               console.log('success', data)
                      // if view successfully handles form then want to update original html to change between added to cart and remove
-                     let addbutton = productForm.find('.alternate-add-button')
+                     let addbutton = thisForm.find('.alternate-add-button')
                      if (data.added) {
                       addbutton.html('Item in cart <button type="submit" class="btn btn-link">Remove?</button>')
                     } else {
@@ -42,56 +43,56 @@
                     }
                     let navbarCartCount = $('.navbar-cart-count')
                     if (data.cartCount > 0) {
-                      navbarCartCount.html(data.cartCount)
+                      navbarCartCount.text(data.cartCount)
                     } else {
-                      navbarCartCount.html('')
+                      navbarCartCount.text('')
                     }
                     let currentPath = window.location.href
-                    // if (currentPath.indexOf('cart') != -1) {
-                    //   refreshCart()
-                    // }
+                    if (currentPath.indexOf('cart') != -1) {
+                      refreshCart()
+                    }
             },
             error: function(errorData){
               console.log('error', errorData)
             }
-                })
+          })
         })
-        // function refreshCart() {
-        //   let cartTable = $(".ajax-refresh-cart-table")
-        //   let cartbody = $(".ajax-refresh-cart-body")
-        //   let subtotal = cartbody.find('.ajax-cart-subtotal')
-        //   let total = cartbody.find('.ajax-cart-total')
-        //   let cartRow = cartbody.find(".ajax-cart-row")
-        //   let currentUrl = window.location.href
-
-        //   $.ajax({
-        //     url: 'api/refresh_cart/',
-        //     method: 'GET',
-        //     data: {},
-        //     success: function(data) {
-        //       console.log(data)
-        //       if (data.products.length < 1) {
-        //         window.location.href = currentUrl
-        //       } else {
-        //         let cartProductRemoveForm = $(".cart-product-remove-form")
-        //         cartProductRemoveForm.css('display', 'block')
-        //         cartRow.html('')
-        //         let counter = data.products.length
-        //         $.each(data.products, function(index, value){
-        //           let newCartProductRemoveForm = cartProductRemoveForm.clone()
-        //           newCartProductRemoveForm.find(".api-cart-product-id").val(value.id)
-        //           cartbody.prepend('<tr class="ajax-cart-row"><th scope="row">' + counter + '</th><td class="px-5" ><a href="' + value.url + '">' + value.name + ' ' + newCartProductRemoveForm.html() +'<td>' + value.price + '</td>')
-        //           counter--
-        //         })
-        //         subtotal.text(data.subtotal)
-        //         total.text(data.total)
-        //       }
-        //     },
-        //     error: function(errorData) {
-        //       console.log(errorData)
-        //     }
-        //   })
-        // }
+        function refreshCart() {
+          let cartTable = $(".ajax-refresh-cart-table")
+          let cartbody = cartTable.find(".ajax-refresh-cart-body")
+          let subtotal = cartbody.find('.ajax-cart-subtotal')
+          let total = cartbody.find('.ajax-cart-total')
+          let cartRow = cartbody.find(".ajax-cart-row")
+          let currentUrl = window.location.href
+          console.log('test')
+          // $.ajax({
+          //   url: 'api/refresh_cart/',
+          //   method: 'GET',
+          //   data: {},
+          //   success: function(data) {
+          //     console.log(data)
+          //     if (data.products.length < 1) {
+          //       window.location.href = currentUrl
+          //     } else {
+          //       let cartProductRemoveForm = $(".cart-product-remove-form")
+          //       cartProductRemoveForm.css('display', 'block')
+          //       cartRow.html('')
+          //       let counter = data.products.length
+          //       $.each(data.products, function(index, value){
+          //         let newCartProductRemoveForm = cartProductRemoveForm.clone()
+          //         newCartProductRemoveForm.find(".api-cart-product-id").val(value.id)
+          //         cartbody.prepend('<tr class="ajax-cart-row"><th scope="row">' + counter + '</th><td class="px-5" ><a href="' + value.url + '">' + value.name + ' ' + newCartProductRemoveForm.html() +'<td>' + value.price + '</td>')
+          //         counter--
+          //       })
+          //       subtotal.text(data.subtotal)
+          //       total.text(data.total)
+          //     }
+          //   },
+          //   error: function(errorData) {
+          //     console.log(errorData)
+          //   }
+          // })
+        }
       })
     </script>
   </body>
