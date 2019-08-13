@@ -12,19 +12,20 @@ class RegisterView(CreateView):
     template_name = 'accounts/register.html'
     success_url = '/accounts/'
 
+class LoginView(FormView):
+    form_class = LoginForm
+    template_name = 'accounts/login.html'
+    success_url = '/'
 
+    def form_valid(self, form):
+        request = self.request
+        next_ = request.GET.get('next')
+        next_post = request.POST.get('next')
+        redirect_path = next_ or next_post
 
-
-def login_page(request):
-    form=LoginForm(request.POST or None)
-    context = {'form':form}
-    next_ = request.GET.get('next')
-    next_post = request.POST.get('next')
-    redirect_path = next_ or next_post
-    if form.is_valid():
-        username=form.cleaned_data.get('username')
-        password=form.cleaned_data.get('password')
-        user=authenticate(request, username=username, password=password)
+        email = form.cleaned_data.get('email')
+        password = form.cleaned_data.get('password')
+        user = authenticate(request, username=email, password=password)
         if user is not None:
             login(request, user)
             try:
@@ -35,9 +36,8 @@ def login_page(request):
                 return redirect(redirect_path)
             else:
                 return redirect('home')
-        else:
-            print('adsf')
-    return render(request, 'accounts/login.html', context)
+        return super(LoginView, self).form_invalid(form)
+
 
 def guest_login_view(request):
     form=GuestForm(request.POST or None)
