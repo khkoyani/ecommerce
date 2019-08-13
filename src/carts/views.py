@@ -57,6 +57,7 @@ def cart_update(request):
     return redirect(to='cart:home')
 
 def checkout(request):
+    print(1)
     cart_obj, new_obj = Cart.objects.get_or_new(request)
     order_obj = None
     if new_obj or cart_obj.products.count() ==0:
@@ -73,9 +74,9 @@ def checkout(request):
     billing_profile, billing_profile_created = BillingProfile.objects.get_or_new(request)
 
     if billing_profile is not None:
+        order_obj, order_obj_created = Order.objects.get_or_new(billing_profile, cart_obj)
         if request.user.is_authenticated:
-            order_obj, order_obj_created = Order.objects.get_or_new(billing_profile, cart_obj)
-        address_qs = Address.objects.filter(billing_profile=billing_profile)
+            address_qs = Address.objects.filter(billing_profile=billing_profile)
         if shipping_address_id:
             order_obj.shipping_address = Address.objects.get(id=shipping_address_id)
             del request.session['shipping_address_id']

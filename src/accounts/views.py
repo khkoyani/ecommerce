@@ -3,17 +3,15 @@ from django.contrib.auth import get_user_model, authenticate, login
 from .forms import LoginForm, RegisterForm, GuestForm
 from django.utils.http import is_safe_url
 from .models import Guest
+from django.views.generic import CreateView, FormView
 
 User = get_user_model()
-def register(request):
-    form = RegisterForm(request.POST or None)
-    context = {'form': form}
-    if form.is_valid():
-        username = form.cleaned_data.get('username')
-        email = form.cleaned_data.get('email')
-        password = form.cleaned_data.get('password')
-        new_user = User.objects.create_user(username, email, password)
-    return render(request, 'accounts/register.html', context)
+
+class RegisterView(CreateView):
+    form_class = RegisterForm
+    template_name = 'accounts/register.html'
+    success_url = '/accounts/'
+
 
 
 

@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"cart",
+				"cart_obj\tunknown ⟠"
+			],
+			[
+				"navbar",
+				"navbarCartCount"
+			],
+			[
+				"form",
+				"formData\t(): PromiseFormData NativeScript - Response"
+			],
+			[
+				"product",
+				"productFormAction"
+			],
+			[
+				"docum",
+				"Document\t(): Document Document"
+			],
+			[
+				"textarea",
+				"textareacontent"
+			],
+			[
+				"eac",
+				"each\t( array: Array, callback: Function( Integer indexInArray, Object value ) ): Object jQuery - Utilities"
+			],
+			[
 				"gridte",
 				"grid-template-columns"
 			],
@@ -171,24 +199,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Users/Karan/django_projects/ecommerce/jquery/index.html",
-			"settings":
-			{
-				"buffer_size": 1213,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Karan/django_projects/ecommerce/jquery/jquery.js",
-			"settings":
-			{
-				"buffer_size": 51,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -294,11 +304,43 @@
 		"/C/Users/Karan/django_projects/ecommerce",
 		"/C/Users/Karan/django_projects/ecommerce/jquery",
 		"/C/Users/Karan/django_projects/ecommerce/src",
+		"/C/Users/Karan/django_projects/ecommerce/src/carts",
+		"/C/Users/Karan/django_projects/ecommerce/src/carts/templates",
+		"/C/Users/Karan/django_projects/ecommerce/src/carts/templates/carts",
 		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj",
-		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj/css"
+		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj/css",
+		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj/js",
+		"/C/Users/Karan/django_projects/ecommerce/src/templates",
+		"/C/Users/Karan/django_projects/ecommerce/src/templates/base",
+		"/C/Users/Karan/django_projects/ecommerce/src/templates/contact"
 	],
 	"file_history":
 	[
+		"/C/Users/Karan/django_projects/ecommerce/src/search/templates/search/view.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/search/templates/search/snippets/search-form.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/templates/base/js.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj/js/csrf.ajax.js",
+		"/C/Users/Karan/django_projects/ecommerce/src/templates/base.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/templates/contact/contact.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj/js/eCommerce.js",
+		"/C/Users/Karan/django_projects/ecommerce/src/ecommerce/views.py",
+		"/C/Users/Karan/django_projects/ecommerce/src/ecommerce/urls.py",
+		"/C/Users/Karan/django_projects/ecommerce/src/templates/base/css.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/search/urls.py",
+		"/C/Users/Karan/django_projects/ecommerce/src/templates/base/nav_bar.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/product/templates/product/snippets/remove_from_cart.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/carts/templates/carts/home.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/product/templates/product/snippets/update_cart.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/product/views.py",
+		"/C/Users/Karan/django_projects/ecommerce/src/product/templates/product/product_list.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/product/templates/product/snippets/card.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/carts/views.py",
+		"/C/Users/Karan/django_projects/ecommerce/src/product/templates/product/home.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/product/templates/product/product_detail.html",
+		"/C/Users/Karan/django_projects/ecommerce/src/carts/urls.py",
+		"/C/Users/Karan/django_projects/ecommerce/src/carts/models.py",
+		"/C/Users/Karan/django_projects/ecommerce/jquery/index.html",
+		"/C/Users/Karan/django_projects/ecommerce/jquery/jquery.js",
 		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript-Completions.sublime-settings",
 		"/C/Users/Karan/AppData/Roaming/Sublime Text 3/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
 		"/C/Users/Karan/django_projects/ecommerce/src/static_myproj/css/main.css",
@@ -377,7 +419,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -408,78 +450,19 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Users/Karan/django_projects/ecommerce/jquery/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								754,
-								754
-							]
-						],
-						"settings":
-						{
-							"SL.31.region_keys":
-							[
-							],
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Karan/django_projects/ecommerce/jquery/jquery.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 51,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								51,
-								51
-							]
-						],
-						"settings":
-						{
-							"SL.32.region_keys":
-							[
-							],
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -494,11 +477,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.531741201419,
 			1.0
 		],
 		"rows":
@@ -528,7 +518,7 @@
 	"project": "ecomm_sublime_text.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -558,7 +548,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -566,7 +556,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 247.0,
+	"side_bar_width": 291.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
